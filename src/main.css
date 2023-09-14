@@ -2,85 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    box-sizing:border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-:root{
-    font-size: 16px;
-    --bg-dark: #242526;
-    --color-white: whitesmoke;   
+:root {
+  font-size: 16px;
+  --bg-dark: #242526;
+  --color-white: whitesmoke;
+  --principal-blue: #68ddfd;
 }
 
-body{
-   background: var(--bg-dark);
-   color:var(--color-white);
-   font-weight: 700;
+body {
+  background: var(--bg-dark);
+  color: var(--color-white);
+  font-weight: 700;
 }
 
-
-
-.headerNavbar, .footer{
-display: grid;
-color: #68DDFD;
-height: 60px;
-grid-template-rows: 100%;
-
+.headerNavbar,
+.footer {
+  display: grid;
+  color: var(--principal-blue);
+  height: 60px;
+  grid-template-rows: 100%;
 }
 
-.headerNavbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right:0;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
+.headerNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
-
-.header1{
-    font-size: 2rem;
-    color: #68DDFD;
-    margin-left: 40px;
-    padding: 0.25rem ;
+.header1 {
+  font-size: 2rem;
+  color: var(--principal-blue);
+  margin-left: 40px;
+  padding: 0.25rem;
 }
 
-
-nav button{
-    
-    border: none;
-    color:  #68DDFD;
-    padding: 0.51rem;
-    border-radius: 10px;
+nav button {
+  border: none;
+  color: var(--principal-blue);
+  padding: 0.51rem;
+  border-radius: 10px;
 }
 
-nav button:hover{
-    color: white;
-    text-decoration: underline;
-    text-decoration-color:  #68DDFD;
-    line-height:2rem;
-    cursor: pointer;
+nav button:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: var(--principal-blue);
+  line-height: 2rem;
+  cursor: pointer;
 }
 
-
-
-.colorWhite{
-    color: white;
+.colorWhite {
+  color: white;
 }
 
-.main{
-    padding: 50px 1rem;
-    min-height: 90vh;
+.main {
+  padding: 50px 1rem;
+  min-height: 90vh;
 }
 
-.footer{
-    top: 95vh;
-    left: 0;
-    right:0;
-    position: fixed;
-    text-align: center;
+.hero {
+  margin-top: 5vh;
+  min-height: 76vh;
+  background: var(--principal-blue);
+  border-radius: 38px;
+  padding: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.footer {
+  top: 95vh;
+  left: 0;
+  right: 0;
+  position: fixed;
+  text-align: center;
 }

@@ -1,6 +1,6 @@
-# Example
+Readme in Building Process
 
 To run this example:
-
-- `npm install` or `yarn`
-- `npm run dev` or `yarn dev`
+- npm run start 
+- roda com vite
+- PORT : 5173
